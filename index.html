@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <title>home</title>
+  <style>
+    .root {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .root img {
+      -webkit-animation: rotateImg 10s linear infinite;
+    }
+
+    @-webkit-keyframes rotateImg {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+
+      25% {
+        -webkit-transform: rotate(90deg);
+      }
+
+      50% {
+        -webkit-transform: rotate(180deg);
+      }
+
+      75% {
+        -webkit-transform: rotate(270deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="root">
+    <img src="./animation.png" />
+  </div>
+</body>
+
+</html>
